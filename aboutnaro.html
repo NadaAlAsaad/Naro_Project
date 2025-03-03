@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Set viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Page title -->
+  <title>About NARO</title>
+  
+  <!-- Include Bootstrap CSS for styling and layout -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- Google Fonts: Preconnect for improved performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Google Font: Henny Penny -->
+  <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+  
+  <!-- Google Fonts: Preconnect again for additional font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Google Font: Arsenal SC (with different weights and styles) -->
+  <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Global body styling */
+    body {
+      font-family: 'Tinos', serif; /* Set default font */
+      background: linear-gradient(to right, #A5D6A7, #C8E6C9); /* Gradient background */
+      color: #2E7D32; /* Default text color */
+    }
+
+    /* Navbar styling */
+    .navbar {
+      background-color: #2E7D32; /* Green background for the navbar */
+    }
+
+    /* Styling for content sections with white background, rounded corners, etc. */
+    .content-section {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    /* Headings styling */
+    h1,
+    h2 {
+      color: #2E7D32;
+    }
+
+    /* Paragraph text styling */
+    p {
+      font-size: 1.1rem;
+    }
+
+    /* Add top margin for the row containing the contact form and map */
+    .contact-map-row {
+      margin-top: 30px;
+    }
+
+    /* Custom button styling */
+    .btn-custom {
+      background: #66BB6A;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      transition: background 0.3s ease;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    /* Hover effects for the custom button */
+    .btn-custom:hover {
+      background: #4CAF50;
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Footer styling */
+    footer {
+      background: #1B5E20; /* Dark green background */
+      color: #fff; /* White text */
+      text-align: center; /* Centered text */
+      padding: 15px 0; /* Vertical padding */
+      margin-top: 30px; /* Space above the footer */
+    }
+
+    /* Preloader styling for a loading screen effect */
+    #preloader {
+      background: white url(preloader.gif) no-repeat center center; /* White background with centered image */
+      background-size: 70%; /* Scale the preloader image */
+      height: 100%; /* Full height */
+      width: 100%; /* Full width */
+      position: fixed; /* Fixed overlay */
+      z-index: 100; /* Ensure it stays on top */
+    }
+
+    /* Custom font classes for specific text styles from Google Fonts */
+    .henny-penny-regular {
+      font-family: "Henny Penny", system-ui;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .arsenal-sc-regular {
+      font-family: "Arsenal SC", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .arsenal-sc-bold {
+      font-family: "Arsenal SC", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    .arsenal-sc-regular-italic {
+      font-family: "Arsenal SC", sans-serif;
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    .arsenal-sc-bold-italic {
+      font-family: "Arsenal SC", sans-serif;
+      font-weight: 700;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Preloader overlay that appears before the page loads completely -->
+  <div id="preloader"></div>
+  
+  <!-- Navigation Bar (fixed to top) -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <!-- Navbar brand with an SVG icon -->
+      <a class="navbar-brand henny-penny-regular " href="home.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-emoji-smile-upside-down" viewBox="0 0 16 16">
+          <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m0-1a8 8 0 1 1 0 16A8 8 0 0 1 8 0" />
+          <path d="M4.285 6.433a.5.5 0 0 0 .683-.183A3.5 3.5 0 0 1 8 4.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.5 4.5 0 0 0 8 3.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683M7 9.5C7 8.672 6.552 8 6 8s-1 .672-1 1.5.448 1.5 1 1.5 1-.672 1-1.5m4 0c0-.828-.448-1.5-1-1.5s-1 .672-1 1.5.448 1.5 1 1.5 1-.672 1-1.5" />
+        </svg> 
+        NARO
+      </a>
+      
+      <!-- Navbar toggler for mobile view -->
+      <button class="navbar-toggler arsenal-sc-bold" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Collapsible navbar links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <!-- Home link -->
+          <li class="nav-item henny-penny-regular ">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <!-- About Us link (current page) -->
+          <li class="nav-item henny-penny-regular ">
+            <a class="nav-link active" href="aboutnaro.html">About Us</a>
+          </li>
+          <!-- Naro link -->
+          <li class="nav-item henny-penny-regular ">
+            <a class="nav-link" href="Naro.html">Naro</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Spacer to offset fixed navbar height -->
+  <div style="margin-top:70px;"></div>
+
+  <!-- Main content container -->
+  <div class="container">
+    <!-- About Content Section -->
+    <div class="content-section">
+      <!-- Page heading -->
+      <h1 class="henny-penny-regular ">About NARO</h1>
+      <!-- Description paragraph about NARO -->
+      <p class="arsenal-sc-bold">
+        Welcome to NARO’s Daily Dose of Inspiration! Our mission is to spread joy, motivation, and a sense of community.
+        We believe that everyone should be happy, proud of themselves, and embrace life with a smile. Through our daily
+        jokes, quotes, and uplifting messages, we aim to brighten your day and remind you that you’re never alone on your journey.
+      </p>
+      <!-- Additional paragraph describing the origin of the name -->
+      <p class="arsenal-sc-bold">
+        The name “NARO” was chosen with special meaning – a gift from a dear friend who shared daily words of wisdom and humor.
+        That tradition lives on here as we share a mix of inspiration and fun every day.
+      </p>
+      <!-- Invitation to join the community -->
+      <p class="arsenal-sc-bold">
+        Join us as we celebrate life, embrace positivity, and find joy in every moment. Thank you for being part of our community!
+      </p>
+    </div>
+
+    <!-- Row containing the contact form and the map side by side -->
+    <div class="row contact-map-row arsenal-sc-bold">
+      <!-- Column for Contact Form -->
+      <div class="col-md-6">
+        <div class="content-section contact-section">
+          <h2 class="henny-penny-regular ">Contact Us</h2>
+          <!-- Contact form element -->
+          <form id="contactForm">
+            <!-- Name field -->
+            <div class="mb-3">
+              <label for="contactName" class="form-label">Name:</label>
+              <input type="text" class="form-control" id="contactName" placeholder="Your name" required>
+            </div>
+            <!-- Email field -->
+            <div class="mb-3">
+              <label for="contactEmail" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="contactEmail" placeholder="Your email" required>
+            </div>
+            <!-- Message field -->
+            <div class="mb-3">
+              <label for="contactMessage" class="form-label">Message:</label>
+              <textarea class="form-control" id="contactMessage" rows="4" placeholder="Your message" required></textarea>
+            </div>
+            <!-- Submit button -->
+            <button type="submit" class="btn-custom">Send Message</button>
+          </form>
+        </div>
+      </div>
+      <!-- Column for Map Section -->
+      <div class="col-md-6">
+        <div class="content-section map-section">
+          <h2 class="henny-penny-regular ">Our Location</h2>
+          <!-- Embedded OpenStreetMap iframe displaying the location -->
+          <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=36.55%2C35.90%2C36.70%2C36.00&amp;layer=mapnik&amp;marker=35.95%2C36.63" style="border: 1px solid black"></iframe>
+          <br />
+          <!-- Link to view a larger map -->
+          <small>
+            <a href="https://www.openstreetmap.org/?mlat=35.95&amp;mlon=36.63#map=12/35.95/36.63" target="_blank">
+              View Larger Map
+            </a>
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2025 NARO. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS Bundle including Popper for interactive components -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Add event listener to handle form submission without page reload
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent default form submission
+      alert('Thank you for contacting us!'); // Display thank you message
+      this.reset(); // Reset form fields
+    });
+
+    // Hide the preloader once the window finishes loading
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    });
+  </script>
+</body>
+
+</html>
